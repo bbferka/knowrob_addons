@@ -217,6 +217,8 @@ build_pipeline(ListOfAnnotators,EvaluationList):-
 % Map a predefined set of predicates to Annotator Outputs
 annotators_for_predicate(shape,A) :-
 	annotator_outputs(A,'http://knowrob.org/kb/rs_components.owl#RsAnnotationShape' ).
+annotators_for_predicate(class,A) :-
+	annotator_outputs(A,'http://knowrob.org/kb/rs_components.owl#RsAnnotationDetection' ).
 annotators_for_predicate(color,A) :- 
 	annotator_outputs(A,'http://knowrob.org/kb/rs_components.owl#RsAnnotationSemanticcolor' ).
 annotators_for_predicate(size,A) :- 
